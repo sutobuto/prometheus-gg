@@ -1,0 +1,35 @@
+.img, .psy, .bio, .mech, .qua {
+    position: relative; 
+    width: 80px;
+    height: 80px;
+    border-radius: 7px 7px 0px 0px  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s ease-in; 
+}
+
+.img:hover, .psy:hover, .bio:hover, .mech:hover, .qua:hover {
+    transform: scale(1.07); 
+}
+
+.img {
+    background-image: linear-gradient(rgba(117, 115, 94, 0.8), rgba(240, 233, 190, 0.8));
+}
+
+.psy {
+    background-image: linear-gradient(rgba(109, 30, 61, 0.8), rgba(255, 78, 151, 0.8)) ;
+}
+
+.bio {
+    background-image: linear-gradient(rgba(133, 93, 35, 0.8), rgba(252, 179, 69, 0.8));
+}
+
+.mech {
+    background-image: linear-gradient(rgba(38, 112, 141, 0.8), rgba(68, 198, 250, 0.8));
+}
+
+.qua {
+    background-image: linear-gradient(rgba(51, 32, 221, 0.8), rgba(221, 134, 255, 0.8));
+}
+

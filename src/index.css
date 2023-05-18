@@ -1,0 +1,14 @@
+html {
+    background-color: rgb(56, 56, 56);
+}
+
+body {
+    margin: 0px;
+    font-family: 'Open Sans';
+    color: white;
+}
+
+.app {
+    display: flex;
+    margin-top: 100px;
+}

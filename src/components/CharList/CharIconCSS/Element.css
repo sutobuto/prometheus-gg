@@ -1,0 +1,29 @@
+.fire, .lightning, .ice, .physical {
+    position: absolute;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 6px;
+    bottom: -5%;
+    background-color: rgba(44, 44, 44, 0.8);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 19px;
+    width: 19px;
+}
+
+.lightning {
+    background-image: url('/img/elems/Lightning.webp');
+}
+
+.fire {
+    background-image: url('/img/elems/Fire.webp');
+}
+
+.physical {
+    background-image: url('/img/elems/Physical.webp');
+}
+
+.ice {
+    background-image: url('/img/elems/Ice.webp');
+}
