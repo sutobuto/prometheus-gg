@@ -7,7 +7,7 @@ const ValkData = [
     suit: "img",
     element: "fire",
     rank: "S",
-    src: "/img/valks/kiana/HOFIicon.webp",
+    src: "/prometheus-gg/img/valks/kiana/HOFIicon.webp",
   },
   {
     valkname: "Herrscher of Flamescion",
@@ -17,7 +17,7 @@ const ValkData = [
     suit: "psy",
     element: "fire",
     rank: "S",
-    src: "/img/valks/kiana/HOFSicon.webp",
+    src: "/prometheus-gg/img/valks/kiana/HOFSicon.webp",
   },
   {
     valkname: "Herrscher of the Void",
@@ -27,7 +27,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "S",
-    src: "/img/valks/kiana/HOVicon.webp",
+    src: "/prometheus-gg/img/valks/kiana/HOVicon.webp",
   },
   {
     valkname: "Knight Moonbeam",
@@ -37,7 +37,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "S",
-    src: "/img/valks/kiana/KMBicon.webp",
+    src: "/prometheus-gg/img/valks/kiana/KMBicon.webp",
   },
   {
     valkname: "Valkyrie Ranger",
@@ -47,7 +47,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "A",
-    src: "/img/valks/kiana/VRicon.webp",
+    src: "/prometheus-gg/img/valks/kiana/VRicon.webp",
   },
   {
     valkname: "Divine Prayer",
@@ -57,7 +57,7 @@ const ValkData = [
     suit: "psy",
     element: "physical",
     rank: "A",
-    src: "/img/valks/kiana/DPicon.webp",
+    src: "/prometheus-gg/img/valks/kiana/DPicon.webp",
   },
   {
     valkname: "White Comet",
@@ -67,7 +67,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "B",
-    src: "/img/valks/kiana/WCicon.webp",
+    src: "/prometheus-gg/img/valks/kiana/WCicon.webp",
   },
   {
     valkname: "Herrscher of Origin",
@@ -77,7 +77,7 @@ const ValkData = [
     suit: "img",
     element: "lightning",
     rank: "S",
-    src: "/img/valks/mei/HOOicon.webp",
+    src: "/prometheus-gg/img/valks/mei/HOOicon.webp",
   },
   {
     valkname: "Herrscher of Thunder",
@@ -87,7 +87,7 @@ const ValkData = [
     suit: "psy",
     element: "lightning",
     rank: "S",
-    src: "/img/valks/mei/HOTicon.webp",
+    src: "/prometheus-gg/img/valks/mei/HOTicon.webp",
   },
   {
     valkname: "Lightning Empress",
@@ -97,7 +97,7 @@ const ValkData = [
     suit: "psy",
     element: "lightning",
     rank: "S",
-    src: "/img/valks/mei/LEicon.webp",
+    src: "/prometheus-gg/img/valks/mei/LEicon.webp",
   },
   {
     valkname: "Shadow Dash",
@@ -107,7 +107,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "A",
-    src: "/img/valks/mei/SDicon.webp",
+    src: "/prometheus-gg/img/valks/mei/SDicon.webp",
   },
   {
     valkname: "Valkyrie Bladestrike",
@@ -117,7 +117,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "A",
-    src: "/img/valks/mei/VBicon.webp",
+    src: "/prometheus-gg/img/valks/mei/VBicon.webp",
   },
   {
     valkname: "Crimson Impulse",
@@ -127,7 +127,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "B",
-    src: "/img/valks/mei/CIicon.webp",
+    src: "/prometheus-gg/img/valks/mei/CIicon.webp",
   },
   {
     valkname: "Herrscher of Truth",
@@ -137,7 +137,7 @@ const ValkData = [
     suit: "img",
     element: "ice",
     rank: "S",
-    src: "/img/valks/bronya/HOTRicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/HOTRicon.webp",
   },
   {
     valkname: "Silverwing N-EX",
@@ -147,7 +147,7 @@ const ValkData = [
     suit: "bio",
     element: "ice",
     rank: "S",
-    src: "/img/valks/bronya/SNEXicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/SNEXicon.webp",
   },
   {
     valkname: "Herrscher of Reason",
@@ -157,7 +157,7 @@ const ValkData = [
     suit: "mech",
     element: "ice",
     rank: "S",
-    src: "/img/valks/bronya/HORicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/HORicon.webp",
   },
   {
     valkname: "Haxx0r Bunny",
@@ -167,7 +167,7 @@ const ValkData = [
     suit: "psy",
     element: "ice",
     rank: "A",
-    src: "/img/valks/bronya/HBicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/HBicon.webp",
   },
   {
     valkname: "Black Nucleus",
@@ -177,7 +177,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "S",
-    src: "/img/valks/bronya/BNicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/BNicon.webp",
   },
   {
     valkname: "Dimension Breaker",
@@ -187,7 +187,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "S",
-    src: "/img/valks/bronya/DBicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/DBicon.webp",
   },
   {
     valkname: "Wolf's Dawn",
@@ -197,7 +197,7 @@ const ValkData = [
     suit: "psy",
     element: "physical",
     rank: "A",
-    src: "/img/valks/bronya/WDicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/WDicon.webp",
   },
   {
     valkname: "Snowy Sniper",
@@ -207,7 +207,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "A",
-    src: "/img/valks/bronya/SSicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/SSicon.webp",
   },
   {
     valkname: "Yamabuki Armor",
@@ -217,7 +217,7 @@ const ValkData = [
     suit: "psy",
     element: "physical",
     rank: "A",
-    src: "/img/valks/bronya/YAicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/YAicon.webp",
   },
   {
     valkname: "Valkyrie Chariot",
@@ -227,7 +227,7 @@ const ValkData = [
     suit: "psy",
     element: "physical",
     rank: "B",
-    src: "/img/valks/bronya/VCicon.webp",
+    src: "/prometheus-gg/img/valks/bronya/VCicon.webp",
   },
   {
     valkname: "Herrscher of Sentience",
@@ -237,7 +237,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "S",
-    src: "/img/valks/fuhua/HOSicon.webp",
+    src: "/prometheus-gg/img/valks/fuhua/HOSicon.webp",
   },
   {
     valkname: "Azure Empyrea",
@@ -247,7 +247,7 @@ const ValkData = [
     suit: "psy",
     element: "fire",
     rank: "S",
-    src: "/img/valks/fuhua/AEicon.webp",
+    src: "/prometheus-gg/img/valks/fuhua/AEicon.webp",
   },
   {
     valkname: "Shadow Knight",
@@ -257,7 +257,7 @@ const ValkData = [
     suit: "mech",
     element: "lightning",
     rank: "S",
-    src: "/img/valks/fuhua/SKicon.webp",
+    src: "/prometheus-gg/img/valks/fuhua/SKicon.webp",
   },
   {
     valkname: "Phoenix",
@@ -267,7 +267,7 @@ const ValkData = [
     suit: "psy",
     element: "fire",
     rank: "S",
-    src: "/img/valks/fuhua/PXicon.webp",
+    src: "/prometheus-gg/img/valks/fuhua/PXicon.webp",
   },
   {
     valkname: "Night Squire",
@@ -277,7 +277,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "A",
-    src: "/img/valks/fuhua/NSicon.webp",
+    src: "/prometheus-gg/img/valks/fuhua/NSicon.webp",
   },
   {
     valkname: "Valkyrie Accipiter",
@@ -287,7 +287,7 @@ const ValkData = [
     suit: "psy",
     element: "lightning",
     rank: "A",
-    src: "/img/valks/fuhua/VAicon.webp",
+    src: "/prometheus-gg/img/valks/fuhua/VAicon.webp",
   },
   {
     valkname: "Violet Executer",
@@ -297,7 +297,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "S",
-    src: "/img/valks/theresa/VEicon.webp",
+    src: "/prometheus-gg/img/valks/theresa/VEicon.webp",
   },
   {
     valkname: "Celestial Hymn",
@@ -307,7 +307,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "S",
-    src: "/img/valks/theresa/CHicon.webp",
+    src: "/prometheus-gg/img/valks/theresa/CHicon.webp",
   },
   {
     valkname: "Starlit Astrologos",
@@ -317,7 +317,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "A",
-    src: "/img/valks/theresa/SAicon.webp",
+    src: "/prometheus-gg/img/valks/theresa/SAicon.webp",
   },
   {
     valkname: "Luna Kindred",
@@ -327,7 +327,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "A",
-    src: "/img/valks/theresa/LKicon.webp",
+    src: "/prometheus-gg/img/valks/theresa/LKicon.webp",
   },
   {
     valkname: "Sakuno Rondo",
@@ -337,7 +337,7 @@ const ValkData = [
     suit: "psy",
     element: "fire",
     rank: "A",
-    src: "/img/valks/theresa/SRicon.webp",
+    src: "/prometheus-gg/img/valks/theresa/SRicon.webp",
   },
   {
     valkname: "Valkyrie Pledge",
@@ -347,7 +347,7 @@ const ValkData = [
     suit: "psy",
     element: "lightning",
     rank: "A",
-    src: "/img/valks/theresa/VPicon.webp",
+    src: "/prometheus-gg/img/valks/theresa/VPicon.webp",
   },
   {
     valkname: "Vermilion Knight: Eclipse",
@@ -357,7 +357,7 @@ const ValkData = [
     suit: "mech",
     element: "fire",
     rank: "S",
-    src: "/img/valks/himeko/VKEicon.webp",
+    src: "/prometheus-gg/img/valks/himeko/VKEicon.webp",
   },
   {
     valkname: "Blood Rose",
@@ -367,7 +367,7 @@ const ValkData = [
     suit: "psy",
     element: "fire",
     rank: "S",
-    src: "/img/valks/himeko/BRicon.webp",
+    src: "/prometheus-gg/img/valks/himeko/BRicon.webp",
   },
   {
     valkname: "Scarlet Fusion",
@@ -377,7 +377,7 @@ const ValkData = [
     suit: "psy",
     element: "lightning",
     rank: "A",
-    src: "/img/valks/himeko/SFicon.webp",
+    src: "/prometheus-gg/img/valks/himeko/SFicon.webp",
   },
   {
     valkname: "Kriegsmesser",
@@ -387,7 +387,7 @@ const ValkData = [
     suit: "psy",
     element: "ice",
     rank: "A",
-    src: "/img/valks/himeko/KRicon.webp",
+    src: "/prometheus-gg/img/valks/himeko/KRicon.webp",
   },
   {
     valkname: "Valkyrie Triumph",
@@ -397,7 +397,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "A",
-    src: "/img/valks/himeko/VTicon.webp",
+    src: "/prometheus-gg/img/valks/himeko/VTicon.webp",
   },
   {
     valkname: "Battle Storm",
@@ -407,7 +407,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "B",
-    src: "/img/valks/himeko/BSicon.webp",
+    src: "/prometheus-gg/img/valks/himeko/BSicon.webp",
   },
   {
     valkname: "Starchasm Nyx",
@@ -417,7 +417,7 @@ const ValkData = [
     suit: "qua",
     element: "ice",
     rank: "S",
-    src: "/img/valks/seele/SNyxIcon.webp",
+    src: "/prometheus-gg/img/valks/seele/SNyxIcon.webp",
   },
   {
     valkname: "Stygian Nymph",
@@ -427,7 +427,7 @@ const ValkData = [
     suit: "qua",
     element: "physical",
     rank: "S",
-    src: "/img/valks/seele/SNicon.webp",
+    src: "/prometheus-gg/img/valks/seele/SNicon.webp",
   },
   {
     valkname: "Swallowtail Phantasm",
@@ -437,7 +437,7 @@ const ValkData = [
     suit: "qua",
     element: "physical",
     rank: "A",
-    src: "/img/valks/seele/SPicon.webp",
+    src: "/prometheus-gg/img/valks/seele/SPicon.webp",
   },
   {
     valkname: "Palatinus Equinox",
@@ -447,7 +447,7 @@ const ValkData = [
     suit: "img",
     element: "physical",
     rank: "S",
-    src: "/img/valks/durandal/PEicon.webp",
+    src: "/prometheus-gg/img/valks/durandal/PEicon.webp",
   },
   {
     valkname: "Dea Anchora",
@@ -457,7 +457,7 @@ const ValkData = [
     suit: "bio",
     element: "fire",
     rank: "S",
-    src: "/img/valks/durandal/DAicon.webp",
+    src: "/prometheus-gg/img/valks/durandal/DAicon.webp",
   },
   {
     valkname: "Bright Knight: Excelsis",
@@ -467,7 +467,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "S",
-    src: "/img/valks/durandal/BKEicon.webp",
+    src: "/prometheus-gg/img/valks/durandal/BKEicon.webp",
   },
   {
     valkname: "Valkyrie Gloria",
@@ -477,7 +477,7 @@ const ValkData = [
     suit: "qua",
     element: "fire",
     rank: "A",
-    src: "/img/valks/durandal/VGicon.webp",
+    src: "/prometheus-gg/img/valks/durandal/VGicon.webp",
   },
   {
     valkname: "Spina Astera",
@@ -487,7 +487,7 @@ const ValkData = [
     suit: "mech",
     element: "fire",
     rank: "S",
-    src: "/img/valks/rita/SPAicon.webp",
+    src: "/prometheus-gg/img/valks/rita/SPAicon.webp",
   },
   {
     valkname: "Fallen Rosemary",
@@ -497,7 +497,7 @@ const ValkData = [
     suit: "qua",
     element: "lightning",
     rank: "S",
-    src: "/img/valks/rita/FRicon.webp",
+    src: "/prometheus-gg/img/valks/rita/FRicon.webp",
   },
   {
     valkname: "Argent Knight: Artemis",
@@ -507,7 +507,7 @@ const ValkData = [
     suit: "bio",
     element: "ice",
     rank: "S",
-    src: "/img/valks/rita/AKAicon.webp",
+    src: "/prometheus-gg/img/valks/rita/AKAicon.webp",
   },
   {
     valkname: "Phantom Iron",
@@ -517,7 +517,7 @@ const ValkData = [
     suit: "mech",
     element: "lightning",
     rank: "A",
-    src: "/img/valks/rita/PIicon.webp",
+    src: "/prometheus-gg/img/valks/rita/PIicon.webp",
   },
   {
     valkname: "Umbral Rose",
@@ -527,7 +527,7 @@ const ValkData = [
     suit: "psy",
     element: "physical",
     rank: "A",
-    src: "/img/valks/rita/URicon.webp",
+    src: "/prometheus-gg/img/valks/rita/URicon.webp",
   },
   {
     valkname: "Goushinnso Memento",
@@ -537,7 +537,7 @@ const ValkData = [
     suit: "mech",
     element: "ice",
     rank: "S",
-    src: "/img/valks/sakura/GMicon.webp",
+    src: "/prometheus-gg/img/valks/sakura/GMicon.webp",
   },
   {
     valkname: "Darkbolt Jonin",
@@ -547,7 +547,7 @@ const ValkData = [
     suit: "bio",
     element: "lightning",
     rank: "A",
-    src: "/img/valks/sakura/DJicon.webp",
+    src: "/prometheus-gg/img/valks/sakura/DJicon.webp",
   },
   {
     valkname: "Flame Sakitama",
@@ -557,7 +557,7 @@ const ValkData = [
     suit: "bio",
     element: "fire",
     rank: "A",
-    src: "/img/valks/sakura/FSicon.webp",
+    src: "/prometheus-gg/img/valks/sakura/FSicon.webp",
   },
   {
     valkname: "Gyakushinn Miko",
@@ -567,7 +567,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "A",
-    src: "/img/valks/sakura/MikoIcon.webp",
+    src: "/prometheus-gg/img/valks/sakura/MikoIcon.webp",
   },
   {
     valkname: "Sixth Serenade",
@@ -577,7 +577,7 @@ const ValkData = [
     suit: "psy",
     element: "ice",
     rank: "S",
-    src: "/img/valks/kallen/6Sicon.webp",
+    src: "/prometheus-gg/img/valks/kallen/6Sicon.webp",
   },
   {
     valkname: "Sundenjager",
@@ -587,7 +587,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "A",
-    src: "/img/valks/kallen/SJicon.webp",
+    src: "/prometheus-gg/img/valks/kallen/SJicon.webp",
   },
   {
     valkname: "Ritual Imayoh",
@@ -597,7 +597,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "A",
-    src: "/img/valks/kallen/RIicon.webp",
+    src: "/prometheus-gg/img/valks/kallen/RIicon.webp",
   },
   {
     valkname: "Molotov Cherry",
@@ -607,7 +607,7 @@ const ValkData = [
     suit: "psy",
     element: "physical",
     rank: "S",
-    src: "/img/valks/olenyeva/MCicon.webp",
+    src: "/prometheus-gg/img/valks/olenyeva/MCicon.webp",
   },
   {
     valkname: "Blueberry Blitz",
@@ -617,7 +617,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "A",
-    src: "/img/valks/olenyeva/BBicon.webp",
+    src: "/prometheus-gg/img/valks/olenyeva/BBicon.webp",
   },
   {
     valkname: "Blazing Hope",
@@ -627,7 +627,7 @@ const ValkData = [
     suit: "bio",
     element: "physical",
     rank: "A",
-    src: "/img/valks/misc/BHicon.webp",
+    src: "/prometheus-gg/img/valks/misc/BHicon.webp",
   },
   {
     valkname: "Prinzessin der Verurteilung!",
@@ -637,7 +637,7 @@ const ValkData = [
     suit: "bio",
     element: "lightning",
     rank: "A",
-    src: "/img/valks/misc/PVicon.webp",
+    src: "/prometheus-gg/img/valks/misc/PVicon.webp",
   },
   {
     valkname: "Miss Pink Elf",
@@ -647,7 +647,7 @@ const ValkData = [
     suit: "psy",
     element: "physical",
     rank: "S",
-    src: "/img/valks/flamechaser/MPEicon.webp",
+    src: "/prometheus-gg/img/valks/flamechaser/MPEicon.webp",
   },
   {
     valkname: "Herrscher of Human: Ego",
@@ -657,7 +657,7 @@ const ValkData = [
     suit: "psy",
     element: "ice",
     rank: "S",
-    src: "/img/valks/flamechaser/HOHEicon.webp",
+    src: "/prometheus-gg/img/valks/flamechaser/HOHEicon.webp",
   },
   {
     valkname: "Disciplinary Perdition",
@@ -667,7 +667,7 @@ const ValkData = [
     suit: "bio",
     element: "lightning",
     rank: "S",
-    src: "/img/valks/flamechaser/DPEicon.webp",
+    src: "/prometheus-gg/img/valks/flamechaser/DPEicon.webp",
   },
   {
     valkname: "Golden Diva",
@@ -677,7 +677,7 @@ const ValkData = [
     suit: "img",
     element: "lightning",
     rank: "A",
-    src: "/img/valks/flamechaser/GDicon.webp",
+    src: "/prometheus-gg/img/valks/flamechaser/GDicon.webp",
   },
   {
     valkname: "Reverist Calico",
@@ -687,7 +687,7 @@ const ValkData = [
     suit: "img",
     element: "ice",
     rank: "A",
-    src: "/img/valks/flamechaser/RCicon.webp",
+    src: "/prometheus-gg/img/valks/flamechaser/RCicon.webp",
   },
   {
     valkname: "Infinite Ouroboros",
@@ -697,7 +697,7 @@ const ValkData = [
     suit: "mech",
     element: "lightning",
     rank: "S",
-    src: "/img/valks/flamechaser/IOicon.webp",
+    src: "/prometheus-gg/img/valks/flamechaser/IOicon.webp",
   },
   {
     valkname: "Helical Contraption",
@@ -707,7 +707,7 @@ const ValkData = [
     suit: "qua",
     element: "fire",
     rank: "S",
-    src: "/img/valks/flamechaser/HCicon.webp",
+    src: "/prometheus-gg/img/valks/flamechaser/HCicon.webp",
   },
   {
     valkname: "Starry Impression",
@@ -717,7 +717,7 @@ const ValkData = [
     suit: "psy",
     element: "physical",
     rank: "A",
-    src: "/img/valks/flamechaser/SIicon.webp",
+    src: "/prometheus-gg/img/valks/flamechaser/SIicon.webp",
   },
   {
     valkname: "Jade Knight",
@@ -727,7 +727,7 @@ const ValkData = [
     suit: "psy",
     element: "ice",
     rank: "S",
-    src: "/img/valks/immoblades/JKicon.webp",
+    src: "/prometheus-gg/img/valks/immoblades/JKicon.webp",
   },
   {
     valkname: "Valkyrie Quicksand",
@@ -737,7 +737,7 @@ const ValkData = [
     suit: "qua",
     element: "physical",
     rank: "A",
-    src: "/img/valks/immoblades/VQicon.webp",
+    src: "/prometheus-gg/img/valks/immoblades/VQicon.webp",
   },
   {
     valkname: "Midnight Absinthe",
@@ -747,7 +747,7 @@ const ValkData = [
     suit: "img",
     element: "fire",
     rank: "A",
-    src: "/img/valks/serpent/MAicon.webp",
+    src: "/prometheus-gg/img/valks/serpent/MAicon.webp",
   },
   {
     valkname: "Dreamweaver",
@@ -757,7 +757,7 @@ const ValkData = [
     suit: "mech",
     element: "physical",
     rank: "S",
-    src: "/img/valks/serpent/DWicon.webp",
+    src: "/prometheus-gg/img/valks/serpent/DWicon.webp",
   },
   {
     valkname: "Terminal Aide 0017",
@@ -767,7 +767,7 @@ const ValkData = [
     suit: "img",
     element: "physical",
     rank: "A",
-    src: "/img/valks/serpent/TAicon.webp",
+    src: "/prometheus-gg/img/valks/serpent/TAicon.webp",
   },
   {
     valkname: "Chrono Navi",
@@ -777,7 +777,7 @@ const ValkData = [
     suit: "mech",
     element: "fire",
     rank: "A",
-    src: "/img/valks/misc/CNicon.webp",
+    src: "/prometheus-gg/img/valks/misc/CNicon.webp",
   },
 ];
 
