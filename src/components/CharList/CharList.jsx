@@ -113,6 +113,7 @@ const CharList = () => {
           <div class='button'>
             <img
               class='filterimg'
+              style={{ width: 35, height: 35 }}
               src='/prometheus-gg/img/elysian-realm/elysian-realm.webp'
             />
           </div>
