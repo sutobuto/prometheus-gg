@@ -110,7 +110,12 @@ const CharList = () => {
 
           <p style={{ verticalAlign: "middle", margin: 0 }}>│</p>
 
-          <div>er</div>
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/prometheus-gg/img/elysian-realm/elysian-realm.webp'
+            />
+          </div>
         </div>
         <div class='listcontainer'>
           {ValkData.sort((a, b) => {
