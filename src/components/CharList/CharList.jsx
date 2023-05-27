@@ -38,7 +38,9 @@ const CharList = () => {
             B
           </button>
 
-          <p>|</p>
+          <p style={{ verticalAlign: "middle", margin: 0 }}>│</p>
+
+          <div style={{ verticalAlign: "middle", margin: 0 }}>test</div>
         </div>
         <div class='listcontainer'>
           {ValkData.sort((a, b) => {

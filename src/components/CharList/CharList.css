@@ -97,6 +97,16 @@ input {
 }
 
 .ranktext {
+    padding: 0;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 21px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.ranktext:active {
+    text-shadow: white 0 0 10px;
 }
