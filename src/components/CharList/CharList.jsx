@@ -4,9 +4,16 @@ import CharIcon from "./CharIcon.jsx";
 import "./CharList.css";
 import ValkData from "./ValkData.jsx";
 import FilterBar from "./FilterBar.jsx";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 const CharList = () => {
   const [search, setSearch] = React.useState("");
+  // prettier-ignore
+  const [rank, setRank] = React.useState("memes");
+  const handleRank = (event, newRank) => {
+    setRank(newRank);
+  };
   return (
     <div class='appcard'>
       <div class='mainlist'>
@@ -18,29 +25,92 @@ const CharList = () => {
           <h2>Valkyrie Index</h2>
         </div>
         <div class='filterbuttons'>
-          <button
-            class='ranktext'
+          <div
+            className='ranktext button'
+            value='S'
             style={{ color: "rgb(255, 214, 78)" }}
           >
             S
-          </button>
-          <button
-            class='ranktext'
+          </div>
+          <div
+            className='ranktext button'
+            value='A'
             style={{ color: "rgb(255, 0, 234)" }}
           >
             A
-          </button>
-          <button
+          </div>
+          <div
             onClick={() => true}
-            class='ranktext'
+            className='ranktext button'
+            value='B'
             style={{ color: "rgb(164, 204, 255)" }}
           >
             B
-          </button>
+          </div>
 
           <p style={{ verticalAlign: "middle", margin: 0 }}>│</p>
 
-          <div style={{ verticalAlign: "middle", margin: 0 }}>test</div>
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/img/elems/Physical.webp'
+            />
+          </div>
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/img/elems/Fire.webp'
+            />
+          </div>
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/img/elems/Ice.webp'
+            />
+          </div>
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/img/elems/Lightning.webp'
+            />
+          </div>
+
+          <p style={{ verticalAlign: "middle", margin: 0 }}>│</p>
+
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/img/types/psy.webp'
+            />
+          </div>
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/img/types/mech.webp'
+            />
+          </div>
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/img/types/bio.webp'
+            />
+          </div>
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/img/types/qua.webp'
+            />
+          </div>
+          <div class='button'>
+            <img
+              class='filterimg'
+              src='/img/types/img.webp'
+            />
+          </div>
+
+          <p style={{ verticalAlign: "middle", margin: 0 }}>│</p>
+
+          <div>er</div>
         </div>
         <div class='listcontainer'>
           {ValkData.sort((a, b) => {
