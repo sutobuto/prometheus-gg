@@ -53,25 +53,25 @@ const CharList = () => {
           <div class='button'>
             <img
               class='filterimg'
-              src='/img/elems/Physical.webp'
+              src='/prometheus-gg/img/elems/Physical.webp'
             />
           </div>
           <div class='button'>
             <img
               class='filterimg'
-              src='/img/elems/Fire.webp'
+              src='/prometheus-gg/img/elems/Fire.webp'
             />
           </div>
           <div class='button'>
             <img
               class='filterimg'
-              src='/img/elems/Ice.webp'
+              src='/prometheus-gg/img/elems/Ice.webp'
             />
           </div>
           <div class='button'>
             <img
               class='filterimg'
-              src='/img/elems/Lightning.webp'
+              src='/prometheus-gg/img/elems/Lightning.webp'
             />
           </div>
 
@@ -80,31 +80,31 @@ const CharList = () => {
           <div class='button'>
             <img
               class='filterimg'
-              src='/img/types/psy.webp'
+              src='/prometheus-gg/img/types/psy.webp'
             />
           </div>
           <div class='button'>
             <img
               class='filterimg'
-              src='/img/types/mech.webp'
+              src='/prometheus-gg/img/types/mech.webp'
             />
           </div>
           <div class='button'>
             <img
               class='filterimg'
-              src='/img/types/bio.webp'
+              src='/prometheus-gg/img/types/bio.webp'
             />
           </div>
           <div class='button'>
             <img
               class='filterimg'
-              src='/img/types/qua.webp'
+              src='/prometheus-gg/img/types/qua.webp'
             />
           </div>
           <div class='button'>
             <img
               class='filterimg'
-              src='/img/types/img.webp'
+              src='/prometheus-gg/img/types/img.webp'
             />
           </div>
 
