@@ -1,5 +1,6 @@
 import React from "react";
 import "./HoFi.css";
+import "../../../CharList/CharList.css";
 import StigSet from "../../StigSet";
 
 const HoFi = () => {
