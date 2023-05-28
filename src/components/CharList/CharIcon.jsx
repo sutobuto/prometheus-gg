@@ -6,7 +6,7 @@ import "./CharIconCSS/Element.css";
 const CharIcon = (props) => {
   return (
     <div class='container'>
-      <a href='facebook.com'>
+      <a href={props.link}>
         <div className={props.suit + " " + props.rank}>
           <img
             class='iconimg'

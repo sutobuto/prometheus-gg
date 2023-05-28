@@ -75,6 +75,7 @@ const CharList = () => {
             .map((e) => {
               return (
                 <CharIcon
+                  link={e.link}
                   valkname={e.valkname}
                   suit={e.suit}
                   element={e.element}

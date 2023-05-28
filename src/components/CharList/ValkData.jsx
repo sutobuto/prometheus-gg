@@ -1,6 +1,7 @@
 const ValkData = [
   {
     valkname: "Herrscher of Finality",
+    link: "/prometheus-gg/valkyries/herrscher-of-finality",
     character: "kiana",
     elysian: true,
     augment: false,
@@ -11,6 +12,7 @@ const ValkData = [
   },
   {
     valkname: "Herrscher of Flamescion",
+    link: "/prometheus-gg/valkyries/herrscher-of-flamescion",
     character: "kiana",
     elysian: true,
     augment: false,
@@ -21,6 +23,7 @@ const ValkData = [
   },
   {
     valkname: "Herrscher of the Void",
+    link: "/prometheus-gg/valkyries/herrscher-of-the-void",
     character: "kiana",
     elysian: true,
     augment: false,
@@ -31,6 +34,7 @@ const ValkData = [
   },
   {
     valkname: "Knight Moonbeam",
+    link: "/prometheus-gg/valkyries/knight-moonbeam",
     character: "kiana",
     elysian: true,
     augment: false,

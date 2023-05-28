@@ -1,0 +1,52 @@
+
+.mainlist {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.titlename {
+    margin: 0px 0px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.descimg {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 10px 10px;
+}
+
+.valkdesc {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
+}
+
+.imgblock {
+    margin-right: 5px;
+    width: 25px;
+}
+
+.infoblocks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.basicinfo {
+    display: flex;
+    height: 25px;
+    padding: 9px 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(39, 39, 39);
+    font-size: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
