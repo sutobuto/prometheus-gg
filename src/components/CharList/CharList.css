@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     object-position: center;
+    user-select: none;
 }
 
 .filtertab {
@@ -122,7 +123,7 @@ input {
     border-radius: 5px;
 }
 
-.button:hover {
+.button:hover, .buttonHighlight {
     background-color: rgb(85, 85, 85);
 }
 
@@ -131,14 +132,12 @@ input {
 }
 
 p {
-    color: rgb(85, 85, 85)
+    color: rgb(85, 85, 85);
+    user-select: none;
 }
 
 .ranktext {
     text-align: center;
     vertical-align: middle;
-}
-
-.ranktext:active {
-    text-shadow: white 0 0 10px;
+    user-select: none;
 }

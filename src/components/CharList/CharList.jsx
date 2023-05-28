@@ -4,16 +4,25 @@ import CharIcon from "./CharIcon.jsx";
 import "./CharList.css";
 import ValkData from "./ValkData.jsx";
 import FilterBar from "./FilterBar.jsx";
+import FilterButtons from "./FilterButtons.jsx";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 const CharList = () => {
   const [search, setSearch] = React.useState("");
   // prettier-ignore
-  const [rank, setRank] = React.useState("memes");
-  const handleRank = (event, newRank) => {
-    setRank(newRank);
+  const [rank, filterRank] = React.useState("");
+  const [elem, filterElem] = React.useState("");
+  const [type, filterType] = React.useState("");
+  const [elysian, filterElysian] = React.useState(false);
+
+  const handleFilter = (newFilter, filterFunc) => {
+    console.log(type);
+    console.log(newFilter);
+    filterFunc(newFilter);
+    console.log(type);
   };
+
   return (
     <div class='appcard'>
       <div class='mainlist'>
@@ -24,100 +33,19 @@ const CharList = () => {
           />
           <h2>Valkyrie Index</h2>
         </div>
-        <div class='filterbuttons'>
-          <div
-            className='ranktext button'
-            value='S'
-            style={{ color: "rgb(255, 214, 78)" }}
-          >
-            S
-          </div>
-          <div
-            className='ranktext button'
-            value='A'
-            style={{ color: "rgb(255, 0, 234)" }}
-          >
-            A
-          </div>
-          <div
-            onClick={() => true}
-            className='ranktext button'
-            value='B'
-            style={{ color: "rgb(164, 204, 255)" }}
-          >
-            B
-          </div>
 
-          <p style={{ verticalAlign: "middle", margin: 0 }}>│</p>
+        <FilterButtons
+          filterFunc={handleFilter}
+          filterRank={filterRank}
+          filterElem={filterElem}
+          filterType={filterType}
+          filterElysian={filterElysian}
+          rank={rank}
+          elem={elem}
+          type={type}
+          elysian={elysian}
+        />
 
-          <div class='button'>
-            <img
-              class='filterimg'
-              src='/prometheus-gg/img/elems/Physical.webp'
-            />
-          </div>
-          <div class='button'>
-            <img
-              class='filterimg'
-              src='/prometheus-gg/img/elems/Fire.webp'
-            />
-          </div>
-          <div class='button'>
-            <img
-              class='filterimg'
-              src='/prometheus-gg/img/elems/Ice.webp'
-            />
-          </div>
-          <div class='button'>
-            <img
-              class='filterimg'
-              src='/prometheus-gg/img/elems/Lightning.webp'
-            />
-          </div>
-
-          <p style={{ verticalAlign: "middle", margin: 0 }}>│</p>
-
-          <div class='button'>
-            <img
-              class='filterimg'
-              src='/prometheus-gg/img/types/psy.webp'
-            />
-          </div>
-          <div class='button'>
-            <img
-              class='filterimg'
-              src='/prometheus-gg/img/types/mech.webp'
-            />
-          </div>
-          <div class='button'>
-            <img
-              class='filterimg'
-              src='/prometheus-gg/img/types/bio.webp'
-            />
-          </div>
-          <div class='button'>
-            <img
-              class='filterimg'
-              src='/prometheus-gg/img/types/qua.webp'
-            />
-          </div>
-          <div class='button'>
-            <img
-              class='filterimg'
-              src='/prometheus-gg/img/types/img.webp'
-            />
-          </div>
-
-          <p style={{ verticalAlign: "middle", margin: 0 }}>│</p>
-
-          <div class='button'>
-            <img
-              class='filterimg'
-              style={{ width: 35, height: 35 }}
-              src='/prometheus-gg/img/elysian-realm/elysian-realm.webp'
-            />
-          </div>
-        </div>
         <div class='listcontainer'>
           {ValkData.sort((a, b) => {
             if (a.rank != b.rank) {
@@ -136,7 +64,14 @@ const CharList = () => {
             }
             return 0;
           })
-            .filter((valk) => valk.valkname.toLowerCase().includes(search))
+            .filter((valk) => {
+              if (!valk.valkname.toLowerCase().includes(search)) return false;
+              if (!valk.rank.includes(rank)) return false;
+              if (!valk.element.includes(elem)) return false;
+              if (!valk.suit.includes(type)) return false;
+              if (elysian) return valk.elysian;
+              return true;
+            })
             .map((e) => {
               return (
                 <CharIcon
