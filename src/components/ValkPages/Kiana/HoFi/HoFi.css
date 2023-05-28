@@ -4,6 +4,73 @@
     justify-content: flex-start;
 }
 
+.charlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    width: 80%;
+    border-radius: 8px;
+    background-color: rgb(51, 51, 51);
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainchar {
+    display: flex;
+    align-items: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    margin: 30px 0px;
+}
+
+.stigset {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(51, 51, 51);
+}
+
+h3 {
+    margin: 0px;
+}
+
+.stigimg {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: rgb(51, 51, 51);
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+    pointer-events: none;
+}
+
+.stigcontainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+    align-items: center;
+    width: 90px;
+    margin: 0px 10px;
+    text-align: center;
+}
+
 .titlename {
     margin: 0px 0px;
     margin-bottom: 10px;
@@ -16,6 +83,7 @@
     object-fit: cover;
     object-position: center;
     border-radius: 20px 20px 10px 10px;
+    pointer-events: none;
 }
 
 .valkdesc {
