@@ -3,6 +3,7 @@ import "./HoFi.css";
 import "../../../CharList/CharList.css";
 import StigSet from "../../StigSet";
 import Team from "../../Team";
+import Skill from "../../Skill";
 import StigData from "./StigData";
 import TrioData from "./TrioData";
 import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
@@ -59,6 +60,7 @@ const HoFi = () => {
               </div>
             </div>
           </div>
+
           {/* MAIN BOX */}
           <div className='mainchar'>
             {/* STIGMATA COMPARISON */}
@@ -184,6 +186,112 @@ const HoFi = () => {
               />
             </div>
           </div>
+          {/* SKILL BOX */}
+          <div className='mainchar mainskill'>
+            <h3>Skill Overview</h3>
+            <Skill
+              cardhead='Basic ATK'
+              cardtitle='Supreme Blade, Reforged'
+              desc={[
+                "Tap [ATK] to launch a 5-sequence combo that deals Fire DMG. Tap [ULT] to jump airborne or [ULT] after a ground attack to perform an upward attack. Tap [ATK] airborne to perform Basic ATK mid-air. Tap [ULT] again while airborne to perform plunge ATK. Basic ATK stacks ",
+                <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                  Descent
+                </span>,
+                " on hit.",
+              ]}
+            />
+            <Skill
+              cardhead='Combo ATK'
+              cardtitle='Searching Drifter, Answered'
+              desc={[
+                "When full, hold [ATK] to consume all ",
+                <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                  Descent
+                </span>,
+                ,
+                " and cast Combo ATK that deals Fire DMG. Casting Combo ATK switches between ",
+                <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                  Time Flint
+                </span>,
+                " and ",
+                <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                  Moon Blade
+                </span>,
+                " stances and gives 1 stack of ",
+                <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                  Time Wave
+                </span>,
+                ".",
+                <div style={{ fontSize: 12, marginTop: 10 }}>
+                  * Herrscher of Finality starts the battle in Time Flint
+                  stance.
+                </div>,
+              ]}
+            />
+            <Skill
+              cardhead='Evasion'
+              cardtitle='Embarking Saintess, Divine'
+              desc={
+                <div>
+                  Can be triggered twice in a row. When airborne, evasion count
+                  will reset once Herrscher of Finality touches the ground.
+                  Ultimate Evasion triggers a 1.5s{" "}
+                  <span style={{ fontWeight: "bold" }}>Time Fracture</span> and
+                  gains 1 stack of{" "}
+                  <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                    Descent
+                  </span>
+                  .
+                  <div style={{ marginTop: 13 }}>
+                    When Herrscher of Finality has 2 stacks of{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Time Wave
+                    </span>
+                    , hold {"[EVA]"} to gain 5 stacks of{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Descent
+                    </span>{" "}
+                    and trigger{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Absolute Time Fracture
+                    </span>
+                    , during which all skill timers and stage timers freeze and
+                    Herrscher of Finality switches to{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Finale Stance
+                    </span>
+                    . During{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Finale Stance
+                    </span>
+                    , each Basic ATK consumes{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Descent
+                    </span>{" "}
+                    on hit. When all{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Descent
+                    </span>{" "}
+                    is consumed, Herrscher of Finality auto-casts Combo ATK and
+                    ends{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Finale Stance
+                    </span>
+                    .
+                  </div>
+                </div>
+              }
+            />
+            <Skill
+              cardhead='QTE'
+              cardtitle='Eternal Blossom, Blessed'
+            />
+            <Skill
+              cardhead='Ultimate'
+              cardtitle='Deadly Finality, Surmounted'
+            />
+          </div>
+          {/* ELYSIAN REALM BOX */}
           <div className='mainchar'>
             <h3>Elysian Realm</h3>
           </div>

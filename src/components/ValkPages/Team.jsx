@@ -1,7 +1,7 @@
 import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
-const StigSet = (props) => {
+const Team = (props) => {
   return (
     <>
       <div className='stigbox'>
@@ -94,4 +94,4 @@ const StigSet = (props) => {
   );
 };
 
-export default StigSet;
+export default Team;
