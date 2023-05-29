@@ -75,6 +75,7 @@ const ValkData = [
   },
   {
     valkname: "Herrscher of Origin",
+    link: "/prometheus-gg/valkyries/herrscher-of-origin",
     character: "mei",
     elysian: true,
     augment: false,
