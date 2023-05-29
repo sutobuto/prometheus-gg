@@ -31,34 +31,6 @@ const StigSet = (props) => {
               alignItems: "center",
             }}
           >
-            {props.percent && (
-              <div
-                style={{
-                  paddingTop: "0px",
-                  paddingBottom: "10px",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <ProgressBar
-                  completed={props.percent}
-                  height={15}
-                  width={270}
-                  labelAlignment='left'
-                  labelSize={11}
-                  borderRadius={0}
-                  baseBgColor='#404040'
-                  animateOnRender
-                  bgColor={
-                    props.percent == 100
-                      ? "green"
-                      : props.percent > 90
-                      ? "purple"
-                      : "gray"
-                  }
-                />
-              </div>
-            )}
             <div
               style={{
                 display: "flex",
@@ -74,7 +46,7 @@ const StigSet = (props) => {
                     color: "gray",
                   }}
                 >
-                  T
+                  {props.categ1}
                 </span>
                 <img
                   class={"stigimg " + props.type1}
@@ -90,7 +62,7 @@ const StigSet = (props) => {
                     color: "gray",
                   }}
                 >
-                  M
+                  {props.categ2}
                 </span>
                 <img
                   class={"stigimg " + props.type2}
@@ -106,7 +78,7 @@ const StigSet = (props) => {
                     color: "gray",
                   }}
                 >
-                  B
+                  {props.categ3}
                 </span>
                 <img
                   class={"stigimg " + props.type3}

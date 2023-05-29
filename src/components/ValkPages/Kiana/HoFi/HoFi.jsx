@@ -2,12 +2,18 @@ import React from "react";
 import "./HoFi.css";
 import "../../../CharList/CharList.css";
 import StigSet from "../../StigSet";
+import Team from "../../Team";
+import StigData from "./StigData";
+import TrioData from "./TrioData";
+import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 
 const HoFi = () => {
+  const [stig, setStig] = React.useState("trio");
   return (
     <>
       <div className='appcard'>
         <div className='charlist'>
+          {/* MAIN HEADING */}
           <div className='heading'>
             <img
               class='descimg img S'
@@ -32,7 +38,7 @@ const HoFi = () => {
                 </div>
                 <div
                   className='basicinfo'
-                  style={{ color: "orange" }}
+                  style={{ color: "#fc811c", fontWeight: "bold" }}
                 >
                   <img
                     class='imgblock'
@@ -42,7 +48,7 @@ const HoFi = () => {
                 </div>
                 <div
                   className='basicinfo'
-                  style={{ color: "#F0E9BE" }}
+                  style={{ color: "#f0ff80", fontWeight: "bold" }}
                 >
                   <img
                     class='imgblock'
@@ -57,80 +63,78 @@ const HoFi = () => {
           <div className='mainchar'>
             {/* STIGMATA COMPARISON */}
             <div>
-              <h3>Stigmata Comparison</h3>
-              <StigSet
-                number='1'
-                percent={100}
-                stig1='/prometheus-gg/img/stigs/kiana/kiana-t.webp'
-                stig2='/prometheus-gg/img/stigs/kiana/kiana-m.webp'
-                stig3='/prometheus-gg/img/stigs/kiana/kiana-b.webp'
-                name1='Kiana Kaslana'
-                name2='Kiana Kaslana'
-                name3='Kiana Kaslana'
-                categ1='T'
-                categ2='M'
-                categ3='B'
-              />
-              <StigSet
-                number='2'
-                percent={94.27}
-                stig1='/prometheus-gg/img/stigs/kiana/kiana-t.webp'
-                stig2='/prometheus-gg/img/stigs/kiana/kiana-m.webp'
-                stig3='/prometheus-gg/img/stigs/newton/newton-b.webp'
-                name1='Kiana Kaslana'
-                name2='Kiana Kaslana'
-                name3='Newton'
-                categ1='T'
-                categ2='M'
-                categ3='B'
-              />
-              <StigSet
-                number='3'
-                percent={92.71}
-                stig1='/prometheus-gg/img/stigs/kiana/kiana-t.webp'
-                stig2='/prometheus-gg/img/stigs/thales/thales-m.webp'
-                stig3='/prometheus-gg/img/stigs/kiana/kiana-b.webp'
-                name1='Kiana Kaslana'
-                name2='Thales'
-                name3='Kiana Kaslana'
-                categ1='T'
-                categ2='M'
-                categ3='B'
-              />
-              <StigSet
-                number='4'
-                percent={89.6}
-                stig1='/prometheus-gg/img/stigs/himeko/himeko-t.webp'
-                stig2='/prometheus-gg/img/stigs/kiana/kiana-m.webp'
-                stig3='/prometheus-gg/img/stigs/kiana/kiana-b.webp'
-                name1='Murata Himeko'
-                name2='Kiana Kaslana'
-                name3='Kiana Kaslana'
-                categ1='T'
-                categ2='M'
-                categ3='B'
-              />
-              <StigSet
-                number='5'
-                percent={87.44}
-                stig1='/prometheus-gg/img/stigs/turg/turg-t.webp'
-                stig2='/prometheus-gg/img/stigs/thales/thales-m.webp'
-                stig3='/prometheus-gg/img/stigs/turg/turg-b.webp'
-                name1='Turgenev'
-                name2='Thales'
-                name3='Turgenev'
-                categ1='T'
-                categ2='M'
-                categ3='B'
-              />
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  height: 27,
+                  justifyContent: "space-between",
+                }}
+              >
+                <h3>Stigmata Comparison</h3>
+                <select
+                  defaultValue={"trio"}
+                  onChange={(e) => setStig(e.target.value)}
+                >
+                  <option value={"trio"}>Trio</option>
+                  <option value={"standard"}>Standard</option>
+                </select>
+              </div>
+
+              {stig == "trio" &&
+                StigData.map((data) => {
+                  return (
+                    <StigSet
+                      number={data.number}
+                      percent={data.percent}
+                      stig1={data.stig1}
+                      stig2={data.stig2}
+                      stig3={data.stig3}
+                      name1={data.name1}
+                      name2={data.name2}
+                      name3={data.name3}
+                    />
+                  );
+                })}
+              {stig == "standard" &&
+                TrioData.map((data) => {
+                  return (
+                    <StigSet
+                      number={data.number}
+                      percent={data.percent}
+                      stig1={data.stig1}
+                      stig2={data.stig2}
+                      stig3={data.stig3}
+                      name1={data.name1}
+                      name2={data.name2}
+                      name3={data.name3}
+                    />
+                  );
+                })}
+
+              {stig == "standard" && (
+                <div style={{ fontSize: 13, color: "gray" }}>
+                  tested with HoFi-CN-HoTr
+                </div>
+              )}
               <div style={{ fontSize: 13, color: "gray" }}>
-                * tested with HoFi-HoO-HoTr
+                * Kiana B generates SP; use TB or MB for smoother rotations
               </div>
             </div>
             {/* BEST TEAMS */}
             <div>
-              <h3>Best Teams</h3>
-              <StigSet
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  height: 27,
+                  justifyContent: "space-between",
+                }}
+              >
+                <h3>Best Teams</h3>
+              </div>
+
+              <Team
                 cardtitle='Herrscher Trio'
                 number='1'
                 stig1='/prometheus-gg/img/valks/kiana/HOFIicon.webp'
@@ -146,7 +150,7 @@ const HoFi = () => {
                 categ2='Sub-DPS'
                 categ3='Breach'
               />
-              <StigSet
+              <Team
                 cardtitle='Standard Fire'
                 number='2'
                 stig1='/prometheus-gg/img/valks/kiana/HOFIicon.webp'
@@ -162,23 +166,26 @@ const HoFi = () => {
                 categ2='Team SP'
                 categ3='Breach'
               />
-              <StigSet
+              <Team
                 cardtitle='Standard Fire (Budget)'
                 number='3'
                 stig1='/prometheus-gg/img/valks/kiana/HOFIicon.webp'
-                stig2='/prometheus-gg/img/valks/fuhua/AEicon.webp'
-                stig3='/prometheus-gg/img/valks/flamechaser/RCicon.webp'
+                stig2='/prometheus-gg/img/valks/flamechaser/RCicon.webp'
+                stig3='/prometheus-gg/img/valks/fuhua/AEicon.webp'
                 name1='Herrscher of Finality'
                 type1='img'
-                name2='Azure Empyrea'
-                type2='psy'
-                name3='Reverist Calico'
-                type3='img'
+                name2='Reverist Calico'
+                type2='img'
+                name3='Azure Empyrea'
+                type3='psy'
                 categ1='DPS'
-                categ2='Breach'
-                categ3='Team SP'
+                categ2='Team SP'
+                categ3='Breach'
               />
             </div>
+          </div>
+          <div className='mainchar'>
+            <h3>Elysian Realm</h3>
           </div>
         </div>
       </div>
