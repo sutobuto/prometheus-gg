@@ -29,9 +29,9 @@
     justify-content: space-between;
     width: 100%;
     padding: 20px;
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(39, 39, 39);
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .mainskill {
@@ -194,8 +194,8 @@ option {
 
 .scrollbutton {
     height: 100%;
-    padding: 14px;
-    border-radius: 10px;
+    padding: 12px;
+    border-radius: 12px;
     flex-grow: 1;
     flex-basis:0;
     text-align: center;
@@ -204,5 +204,5 @@ option {
 }
 .scrollbutton:hover {
     cursor: pointer;
-    background-color: rgb(105, 105, 105);
+    background-color: rgb(70, 70, 70);
 }

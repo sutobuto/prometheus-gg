@@ -12,8 +12,18 @@ const Filter = (props) => {
     <>
       <div
         class='mainchar'
-        style={{ padding: 0, justifyContent: "flex-start" }}
+        style={{
+          padding: 0,
+          justifyContent: "flex-start",
+          alignItems: "center",
+        }}
       >
+        <div
+          onClick={() => handleScroll(props.stigmataRef)}
+          class='scrollbutton'
+        >
+          Weapon
+        </div>
         <div
           onClick={() => handleScroll(props.stigmataRef)}
           class='scrollbutton'
@@ -43,6 +53,12 @@ const Filter = (props) => {
           class='scrollbutton'
         >
           Elysian Realm
+        </div>
+        <div
+          onClick={() => handleScroll(props.stigmataRef)}
+          class='scrollbutton'
+        >
+          Guides
         </div>
       </div>
     </>
