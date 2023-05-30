@@ -5,6 +5,7 @@ import StigSet from "../../StigSet";
 import Team from "../../Team";
 import Skill from "../../Skill";
 import Filter from "../../Filter";
+import Weapon from "../../Weapon";
 import StigData from "./StigData";
 import TrioData from "./TrioData";
 import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
@@ -13,8 +14,8 @@ const HoFi = () => {
   const [stig, setStig] = React.useState("trio");
 
   const skillRef = React.useRef(null);
+  const weaponRef = React.useRef(null);
   const stigmataRef = React.useRef(null);
-  const teamsRef = React.useRef(null);
   const elysianRef = React.useRef(null);
   return (
     <>
@@ -69,9 +70,65 @@ const HoFi = () => {
 
           <Filter
             stigmataRef={stigmataRef}
+            weaponRef={weaponRef}
             skillRef={skillRef}
             elysianRef={elysianRef}
           />
+          {/* WEAPON */}
+          <div
+            ref={weaponRef}
+            className='mainchar mainskill'
+          >
+            <h3>Weapon Comparison</h3>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "space-between",
+                width: "100%",
+              }}
+            >
+              <div>
+                <Weapon
+                  weapon='Domain of Genesis'
+                  img='/prometheus-gg/img/weapons/pistols/domain-of-genesis.webp'
+                  goods={[
+                    "+ 95% Fire DMG",
+                    "+ 30% Total DMG",
+                    "+ 15% Enemy Total DMG Taken",
+                    "Combo ATK resets weapon cooldown",
+                    "Gains Descent on cast",
+                  ]}
+                />
+                <Weapon
+                  weapon='Domain of Incandescence'
+                  img='/prometheus-gg/img/weapons/pistols/domain-of-incandescence.webp'
+                  goods={[
+                    "+ 30% Fire DMG",
+                    "+ 35% Total DMG",
+                    "+ 15% Enemy Fire DMG Taken",
+                    "Airborne weapon skill",
+                  ]}
+                />
+              </div>
+              <div>
+                <Weapon
+                  weapon='Echo of Paradise: Time Ruins'
+                  img='/prometheus-gg/img/weapons/pistols/eop-pri.webp'
+                  goods={[
+                    "+ 15% Team Total DMG",
+                    "+ 10% Team Total DMG after Ultimate",
+                  ]}
+                />
+                <Weapon
+                  weapon='Tranquil Rhapsody'
+                  img='/prometheus-gg/img/weapons/pistols/tranquil-rhapsody.webp'
+                  goods={["+ 40% Total DMG after weapon active or Ultimate"]}
+                />
+              </div>
+            </div>
+          </div>
           {/* MAIN BOX */}
           <div
             ref={stigmataRef}
@@ -429,6 +486,13 @@ const HoFi = () => {
                 </div>
               }
             />
+          </div>
+          {/* ABYSS COVERAGE */}
+          <div
+            ref={elysianRef}
+            className='mainchar'
+          >
+            <h3>Abyss Coverage</h3>
           </div>
           {/* ELYSIAN REALM BOX */}
           <div

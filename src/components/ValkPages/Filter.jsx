@@ -16,10 +16,11 @@ const Filter = (props) => {
           padding: 0,
           justifyContent: "flex-start",
           alignItems: "center",
+          borderRadius: 12,
         }}
       >
         <div
-          onClick={() => handleScroll(props.stigmataRef)}
+          onClick={() => handleScroll(props.weaponRef)}
           class='scrollbutton'
         >
           Weapon
