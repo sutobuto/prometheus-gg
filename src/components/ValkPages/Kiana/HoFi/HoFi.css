@@ -51,6 +51,7 @@
 
 .skillbox {
     display: flex;
+    text-align: justify;
     flex-direction: column;
     align-items: flex-start;
     flex: 0 0 auto;
@@ -63,20 +64,22 @@
 }
 
 .skillgif {
-    width: 340px;
+    width: 190px;
     border-radius: 5px;
 }
 
 .skillgifcontainer {
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0px;
+    font-size: 12px;
 }
 
 .skillgiftext {
     margin: 0px;
-    margin-bottom: 10px;
+    font-style: italic;
+    margin-top: 5px;
 }
 
 .stigset {
@@ -187,4 +190,19 @@ option {
 
 .dropdown {
     padding: 0px;
+}
+
+.scrollbutton {
+    height: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    flex-grow: 1;
+    flex-basis:0;
+    text-align: center;
+    font-size: 13px;
+    user-select: none;
+}
+.scrollbutton:hover {
+    cursor: pointer;
+    background-color: rgb(105, 105, 105);
 }

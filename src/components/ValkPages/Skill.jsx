@@ -22,7 +22,8 @@ const Skill = (props) => {
           <div>{props.cardhead}</div>
           <div>{props.cardtitle}</div>
         </div>
-        <div>
+        <div style={{ display: "flex" }}>
+          {props.img}
           {/* <div
             style={{
               display: "flex",

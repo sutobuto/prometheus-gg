@@ -4,12 +4,18 @@ import "../../../CharList/CharList.css";
 import StigSet from "../../StigSet";
 import Team from "../../Team";
 import Skill from "../../Skill";
+import Filter from "../../Filter";
 import StigData from "./StigData";
 import TrioData from "./TrioData";
 import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 
 const HoFi = () => {
   const [stig, setStig] = React.useState("trio");
+
+  const skillRef = React.useRef(null);
+  const stigmataRef = React.useRef(null);
+  const teamsRef = React.useRef(null);
+  const elysianRef = React.useRef(null);
   return (
     <>
       <div className='appcard'>
@@ -61,8 +67,16 @@ const HoFi = () => {
             </div>
           </div>
 
+          <Filter
+            stigmataRef={stigmataRef}
+            skillRef={skillRef}
+            elysianRef={elysianRef}
+          />
           {/* MAIN BOX */}
-          <div className='mainchar'>
+          <div
+            ref={stigmataRef}
+            className='mainchar'
+          >
             {/* STIGMATA COMPARISON */}
             <div>
               <div
@@ -187,13 +201,16 @@ const HoFi = () => {
             </div>
           </div>
           {/* SKILL BOX */}
-          <div className='mainchar mainskill'>
+          <div
+            ref={skillRef}
+            className='mainchar mainskill'
+          >
             <h3>Skill Overview</h3>
             <Skill
               cardhead='Basic ATK'
               cardtitle='Supreme Blade, Reforged'
               desc={[
-                "Tap [ATK] to launch a 5-sequence combo that deals Fire DMG. Tap [ULT] to jump airborne or [ULT] after a ground attack to perform an upward attack. Tap [ATK] airborne to perform Basic ATK mid-air. Tap [ULT] again while airborne to perform plunge ATK. Basic ATK stacks ",
+                "Tap [ATK] to launch a 5-sequence combo that deals Fire DMG. Tap [ULT] to jump airborne and [ULT] after a ground attack to perform an upward attack. Tap [ATK] airborne to perform Basic ATK mid-air. Tap [ULT] again while airborne to perform plunge ATK. Basic ATK stacks ",
                 <span style={{ fontWeight: "bold", color: "#e491ff" }}>
                   Descent
                 </span>,
@@ -203,13 +220,45 @@ const HoFi = () => {
             <Skill
               cardhead='Combo ATK'
               cardtitle='Searching Drifter, Answered'
+              img={
+                <div>
+                  <div class='skillgifcontainer'>
+                    <img
+                      class='skillgif'
+                      src='/prometheus-gg/img/valks/kiana/skills/hofi/combo1.gif'
+                    />
+                    <span class='skillgiftext'>Time Flint</span>
+                  </div>
+                  <div class='skillgifcontainer'>
+                    <img
+                      class='skillgif'
+                      style={{ marginTop: 10 }}
+                      src='/prometheus-gg/img/valks/kiana/skills/hofi/combo2.gif'
+                    />
+                    <span class='skillgiftext'>Moon Blade</span>
+                  </div>
+                </div>
+              }
               desc={[
                 "When full, hold [ATK] to consume all ",
                 <span style={{ fontWeight: "bold", color: "#e491ff" }}>
                   Descent
                 </span>,
                 ,
-                " and cast Combo ATK that deals Fire DMG. Casting Combo ATK switches between ",
+                " and cast Combo ATK that deals Fire DMG and gives self-buffs on hit based on current stance. ",
+                <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                  Time Flint
+                </span>,
+                "'s Combo ATK makes enemies ",
+                <span style={{ fontWeight: "bold" }}>take more Fire DMG</span>,
+                " while ",
+                <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                  Moon Blade
+                </span>,
+                "'s Combo ATK ",
+                <span style={{ fontWeight: "bold" }}>recovers SP</span>,
+                ". ",
+                "Casting Combo ATK switches between ",
                 <span style={{ fontWeight: "bold", color: "#e491ff" }}>
                   Time Flint
                 </span>,
@@ -222,6 +271,23 @@ const HoFi = () => {
                   Time Wave
                 </span>,
                 ".",
+                <div style={{ marginTop: 13 }}>
+                  When Herrscher of Origin and Herrscher of Truth are present on
+                  the team, Joint Burst makes Herrscher of Finality deal more
+                  Total DMG and gives Combo ATKs additional effects:
+                </div>,
+                <div>
+                  <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                    Time Flint
+                  </span>{" "}
+                  - additionally makes enemies take more Total DMG for 15s.
+                </div>,
+                <div>
+                  <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                    Moon Blade
+                  </span>{" "}
+                  - additionally restores more SP.
+                </div>,
                 <div style={{ fontSize: 12, marginTop: 10 }}>
                   * Herrscher of Finality starts the battle in Time Flint
                   stance.
@@ -231,13 +297,24 @@ const HoFi = () => {
             <Skill
               cardhead='Evasion'
               cardtitle='Embarking Saintess, Divine'
+              img={
+                <div>
+                  <div class='skillgifcontainer'>
+                    <img
+                      class='skillgif'
+                      src='/prometheus-gg/img/valks/kiana/skills/hofi/atf.gif'
+                    />
+                    <span class='skillgiftext'>Absolute Time Fracture</span>
+                  </div>
+                </div>
+              }
               desc={
                 <div>
                   Can be triggered twice in a row. When airborne, evasion count
                   will reset once Herrscher of Finality touches the ground.
                   Ultimate Evasion triggers a 1.5s{" "}
                   <span style={{ fontWeight: "bold" }}>Time Fracture</span> and
-                  gains 1 stack of{" "}
+                  gives 1 stack of{" "}
                   <span style={{ fontWeight: "bold", color: "#e491ff" }}>
                     Descent
                   </span>
@@ -264,7 +341,8 @@ const HoFi = () => {
                     <span style={{ fontWeight: "bold", color: "#e491ff" }}>
                       Finale Stance
                     </span>
-                    , each Basic ATK consumes{" "}
+                    , Herrscher of Finality deals more Fire DMG and each Basic
+                    ATK consumes{" "}
                     <span style={{ fontWeight: "bold", color: "#e491ff" }}>
                       Descent
                     </span>{" "}
@@ -282,17 +360,81 @@ const HoFi = () => {
                 </div>
               }
             />
+
+            <Skill
+              cardhead='Ultimate (100 SP)'
+              cardtitle='Deadly Finality, Surmounted'
+              img={
+                <div>
+                  <div class='skillgifcontainer'>
+                    <img
+                      class='skillgif'
+                      src='/prometheus-gg/img/valks/kiana/skills/hofi/ult1.gif'
+                    />
+                    <span class='skillgiftext'>Ultimate</span>
+                  </div>
+                  <div class='skillgifcontainer'>
+                    <img
+                      class='skillgif'
+                      style={{ marginTop: 10 }}
+                      src='/prometheus-gg/img/valks/kiana/skills/hofi/ult2.gif'
+                    />
+                    <span class='skillgiftext'>Joint Ultimate</span>
+                  </div>
+                </div>
+              }
+              desc={
+                <div>
+                  Herrscher of Finality leaps in the air under the cold
+                  moonlight to unleash a dropkick that pauses all timers and
+                  deals massive AOE Fire DMG to all enemies.
+                  <div style={{ marginTop: 13 }}>
+                    When Herrscher of Origin and Herrscher of Truth are in the
+                    same team,{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Time Wave
+                    </span>{" "}
+                    does not reset on character switch and Ultimate is replaced
+                    with a 125 SP cost{" "}
+                    <span style={{ fontWeight: "bold", color: "#e491ff" }}>
+                      Joint Ultimate
+                    </span>
+                    , during which the three characters perform a joint attack
+                    that deals massive Fire, Ice and Lightning DMG.
+                  </div>
+                </div>
+              }
+            />
             <Skill
               cardhead='QTE'
               cardtitle='Eternal Blossom, Blessed'
+              desc={
+                <div>
+                  Triggered when an enemy is Time-Slowed, ignited, knocked
+                  airborne, or hit by Mei's Combo ATK. Deals Fire DMG and
+                  induces a 2s global{" "}
+                  <span style={{ fontWeight: "bold" }}>Time Fracture</span>. QTE
+                  can connect to aerial Basic ATK SEQ 3.
+                </div>
+              }
             />
             <Skill
-              cardhead='Ultimate'
-              cardtitle='Deadly Finality, Surmounted'
+              cardhead='Leader'
+              cardtitle='Lightwing of Comet'
+              desc={
+                <div>
+                  Team deals more Elemental DMG. When Mei is present on the
+                  team, both Mei and Herrscher of Finality deal even more
+                  Elemental DMG
+                </div>
+              }
             />
           </div>
           {/* ELYSIAN REALM BOX */}
-          <div className='mainchar'>
+          <div
+            ref={elysianRef}
+            className='mainchar'
+          >
             <h3>Elysian Realm</h3>
           </div>
         </div>
